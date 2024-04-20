@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="cart.css">
+    <div>
+        <label for="pizzaSize">Pizza Size:</label>
+        <select id="pizzaSize">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+    </div>
+    <div>
+        <label for="topping">Toppings:</label>
+        <input type="checkbox" id="pepperoni" value="pepperoni"> Pepperoni
+        <input type="checkbox" id="mushrooms" value="mushrooms"> Mushrooms
+        <input type="checkbox" id="sausage" value="sausage"> Sausage
+    </div>
+    <div>
+        <h2>Shipping Information</h2>
+        <label form="address">Shipping Address:</label>
+        <textarea id="address" rows="4" cols="50"></textarea>
+    </div>
+    <div>
+        
+        <h2>Cart Summary</h2>
+        <p>Total Amount: Rs.<span id="totalAmount">0</span></p>
+    </div>
+    <button onclick="showPopup()">Confirm Booking</button>
+    <div id="popup-overlay"></div>
+    <div id="popup-container">
+        <div id="thank-you-message">Thank you for ordering from our website!</div>
+        <button id="close-popup" onclick="closePopup()">Close</button>
+    </div>
+</body>
+</html>

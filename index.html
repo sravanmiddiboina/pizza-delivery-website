@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza delivery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <header>
+    <img src="logo piz.png" alt="" />
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">contact us</a></li>
+        <li><a href="login.html" class="signup-btn">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="here">
+    <div class="left-container">
+      <div class="left-content">
+        <h2>Pizza <span>Go</span></h2>
+        <h1>Delicious food at Your <span>Door</span></h1>
+        <p>Craving for a slice of cheesy goodness? get our pizza Go for pipping hot pies delivered at right to your doorstep!       </p>
+        <button class="order-now-btn" onclick="location.href='login.html'">Order Now</button>
+      </div>
+    </div>
+    <div class="right-container">
+      <img src="pizza.jpg" alt="" width="600px"/>
+    </div>
+  </section>
+
+  <section class="title-style">
+    <div class="category-title">
+      <h5>CATEGORY</h5>
+      <h3>Veg </h3>
+      <ul id="cart-items"></ul>
+    </div>
+    <div class="services-card">
+      <div class="card">
+        <img src="p1.png" alt="Avatar" width="125" />
+        <h4>Paneer Tikka Pizza</h4>
+        <select class="quantity" onchange="calculatetotal()">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        </select>
+        <p id="total-price">starting Rs.120/-</p>
+        <button class="order-now-btn" onclick="location.href='cart.html'">Order now</button>
+      </div>
+      <div class="card">
+        <img src="p2.png" alt="Avatar" width="125" />
+        <h4>Magherita Pizza</h4>
+        <select class="quantity" onchange="calculatetotal()">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          </select>
+        <p id="total-price">starting Rs.120/-</p>
+        <button class="order-now-btn" onclick="location.href='cart.html'">Order now</button>
+      </div>
+      <div class="card">
+        <img src="p3.png" alt="Avatar" width="125" />
+        <h4>Farmhouse Pizza</h4>
+        <select class="quantity" onchange="calculatetotal()">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          </select>
+        <p id="total-price">starting Rs.120/-</p>
+        <button class="order-now-btn" onclick="location.href='cart.html'">Order now</button>
+        </div>
+      <div class="card">
+        <img src="p4.png" alt="Avatar" width="100" />
+        <h4>Veggie supreme pizza</h4>
+        <select class="quantity" onchange="calculatetotal()">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          </select>
+        <p id="total-price">starting Rs.120/-</p>
+        <button class="order-now-btn" onclick="location.href='cart.html'">Order now</button>
+      </div>
+    </div>
+  </section>
+  <div class="category-title">
+    <h5>CATEGORY</h5>
+    <h3>Non-Veg </h3>
+  </div>
+  <div class="services-card">
+    <div class="card">
+      <img src="p1.png" alt="Avatar" width="125" />
+      <h4>Chicken Tikka Pizza</h4>
+      <select class="quantity" onchange="calculatetotal()">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          </select>
+      <p id="total-price">starting Rs.120/-</p>
+      <button class="order-now-btn" onclick="location.href='cart.html'">Order now</button>
+    </div>
+    <div class="card">
+      <img src="p6.png" alt="Avatar" width="125" />
+      <h4>Barbeque chicken Pizza</h4>
+      <select class="quantity" onchange="calculatetotal()">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          </select>
+      <p id="total-price">starting Rs.120/-</p>
+      <button class="order-now-btn" onclick="location.href='cart.html'">Order now</button>
+    </div>
+    <div class="card">
+      <img src="p5.png" alt="Avatar" width="125" />
+      <h4>Pepperoni Pizza</h4>
+      <select class="quantity" onchange="calculatetotal()">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          </select>
+      <p id="total-price">starting Rs.120/-</p>
+      <button class="order-now-btn" onclick="location.href='cart.html'">Order now</button>
+      </div>
+    <div class="card">
+      <img src="p2.png" alt="Avatar" width="125" />
+      <h4>Chicken supreme pizza</h4>
+      <select class="quantity" onchange="calculatetotal()">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          </select>
+      <p id="total-price">starting Rs.120/-</p>
+      <button class="order-now-btn" onclick="location.href='cart.html'">Order now</button>
+    </div>
+  </div>
+  
